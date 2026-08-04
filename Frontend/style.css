@@ -1,0 +1,422 @@
+/* ===============================
+   GLOBAL
+================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================== */
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===============================
+   LEFT PANEL
+================================== */
+
+.left-panel{
+
+    width:45%;
+    background:linear-gradient(135deg,#003366,#0056b3);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px;
+
+}
+
+.overlay{
+
+    max-width:500px;
+
+}
+
+.logo{
+
+    width:120px;
+
+    margin-bottom:25px;
+
+}
+
+.overlay h1{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.overlay p{
+
+    font-size:18px;
+
+    margin-bottom:30px;
+
+    color:#dbe8ff;
+
+}
+
+.overlay ul{
+
+    list-style:none;
+
+}
+
+.overlay li{
+
+    margin:18px 0;
+
+    font-size:18px;
+
+}
+
+/* ===============================
+   RIGHT PANEL
+================================== */
+
+.right-panel{
+
+    width:55%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:white;
+
+}
+
+.login-box{
+
+    width:420px;
+
+    padding:45px;
+
+    border-radius:15px;
+
+    background:white;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+.login-box h2{
+
+    text-align:center;
+
+    color:#003366;
+
+    margin-bottom:10px;
+
+}
+
+.login-box p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+/* ===============================
+   TABS
+================================== */
+
+.tabs{
+
+    display:flex;
+
+    margin-bottom:30px;
+
+}
+
+.tab{
+
+    flex:1;
+
+    padding:14px;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#ececec;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.tab.active{
+
+    background:#0056b3;
+
+    color:white;
+
+}
+
+/* ===============================
+   INPUT
+================================== */
+
+.input-group{
+
+    margin-bottom:20px;
+
+    position:relative;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.input-group input:focus{
+
+    border:1px solid #0056b3;
+
+}
+
+.input-group i{
+
+    position:absolute;
+
+    right:15px;
+
+    top:43px;
+
+    cursor:pointer;
+
+    color:#777;
+
+}
+
+/* ===============================
+   OPTIONS
+================================== */
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+.options a{
+
+    text-decoration:none;
+
+    color:#0056b3;
+
+}
+
+/* ===============================
+   BUTTONS
+================================== */
+
+.login-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    background:#0056b3;
+
+    color:white;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#003f87;
+
+}
+
+.register-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    border:2px solid #0056b3;
+
+    background:white;
+
+    color:#0056b3;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.register-btn:hover{
+
+    background:#0056b3;
+
+    color:white;
+
+}
+
+/* ===============================
+   DIVIDER
+================================== */
+
+.divider{
+
+    text-align:center;
+
+    margin:25px 0;
+
+    color:#999;
+
+    position:relative;
+
+}
+
+.divider::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:50%;
+
+    width:42%;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+.divider::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+
+    top:50%;
+
+    width:42%;
+
+    height:1px;
+
+    background:#ddd;
+
+}
+
+/* ===============================
+   FOOTER
+================================== */
+
+.footer{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    font-size:13px;
+
+    color:#777;
+
+}
+
+/* ===============================
+   RESPONSIVE
+================================== */
+
+@media(max-width:900px){
+
+.left-panel{
+
+display:none;
+
+}
+
+.right-panel{
+
+width:100%;
+
+}
+
+.login-box{
+
+width:95%;
+
+}
+
+}

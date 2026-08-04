@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval & Credit Management System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left-panel">
+
+        <div class="overlay">
+
+            <img src="images/bank-logo.png" class="logo">
+
+            <h1>Loan Approval & Credit Management System</h1>
+
+            <p>
+                Secure Banking Solution for Customers and Employees
+            </p>
+
+            <ul>
+
+                <li>✔ Loan Application</li>
+
+                <li>✔ Credit Score Analysis</li>
+
+                <li>✔ Loan Approval Workflow</li>
+
+                <li>✔ EMI Tracking</li>
+
+                <li>✔ Audit Logs</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="right-panel">
+
+        <div class="login-box">
+
+            <h2>Welcome Back</h2>
+
+            <p>Please login to continue</p>
+
+            <!-- Toggle -->
+
+            <div class="tabs">
+
+                <button class="tab active"
+                    id="customerBtn"
+                    onclick="switchUser('customer')">
+
+                    Customer
+
+                </button>
+
+                <button class="tab"
+                    id="employeeBtn"
+                    onclick="switchUser('employee')">
+
+                    Employee
+
+                </button>
+
+            </div>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+
+                    <label>Email</label>
+
+                    <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter Email"
+                    required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    required>
+
+                    <i class="fa-solid fa-eye"
+                    id="togglePassword"
+                    onclick="togglePassword()"></i>
+
+                </div>
+
+                <div class="options">
+
+                    <label>
+
+                        <input
+                        type="checkbox">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="#">Forgot Password?</a>
+
+                </div>
+
+                <button
+                class="login-btn"
+                type="submit">
+
+                    Login
+
+                </button>
+
+            </form>
+
+            <div class="divider">
+
+                OR
+
+            </div>
+
+            <button
+            class="register-btn">
+
+                Create New Customer Account
+
+            </button>
+
+            <div class="footer">
+
+                © 2026 Loan Approval & Credit Management System
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>

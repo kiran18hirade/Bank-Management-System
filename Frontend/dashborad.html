@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Loan Approval & Credit Management</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4b7d8c1b0d.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <h2>🏦 BANK</h2>
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </li>
+
+        <li>
+            <i class="fa-solid fa-user"></i>
+            Customers
+        </li>
+
+        <li>
+            <i class="fa-solid fa-file-circle-plus"></i>
+            Apply Loan
+        </li>
+
+        <li>
+            <i class="fa-solid fa-file-lines"></i>
+            Loan Applications
+        </li>
+
+        <li>
+            <i class="fa-solid fa-money-bill"></i>
+            Approved Loans
+        </li>
+
+        <li>
+            <i class="fa-solid fa-credit-card"></i>
+            EMI Schedule
+        </li>
+
+        <li>
+            <i class="fa-solid fa-chart-line"></i>
+            Credit Score
+        </li>
+
+        <li>
+            <i class="fa-solid fa-chart-column"></i>
+            Reports
+        </li>
+
+        <li>
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            Audit Logs
+        </li>
+
+        <li>
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <header>
+
+        <div class="search">
+
+            <input type="text" placeholder="Search Customer">
+
+        </div>
+
+        <div class="profile">
+
+            <i class="fa-solid fa-bell"></i>
+
+            <img src="images/user.png">
+
+            <span>Welcome Employee</span>
+
+        </div>
+
+    </header>
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h3>Total Customers</h3>
+
+            <h1>1250</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Pending Loans</h3>
+
+            <h1>18</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Approved Loans</h3>
+
+            <h1>324</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Rejected Loans</h3>
+
+            <h1>42</h1>
+
+        </div>
+
+    </section>
+
+    <section class="charts">
+
+        <div class="chart">
+
+            <h3>Loan Status</h3>
+
+            <canvas id="loanChart"></canvas>
+
+        </div>
+
+        <div class="chart">
+
+            <h3>Monthly Applications</h3>
+
+            <canvas id="applicationChart"></canvas>
+
+        </div>
+
+    </section>
+
+    <section class="table-section">
+
+        <h2>Recent Loan Applications</h2>
+
+        <table>
+
+            <thead>
+
+            <tr>
+
+                <th>Loan ID</th>
+
+                <th>Customer</th>
+
+                <th>Amount</th>
+
+                <th>Credit Score</th>
+
+                <th>Status</th>
+
+                <th>Action</th>
+
+            </tr>
+
+            </thead>
+
+            <tbody>
+
+            <tr>
+
+                <td>L1001</td>
+
+                <td>Kiran Hirade</td>
+
+                <td>₹500000</td>
+
+                <td>790</td>
+
+                <td><span class="pending">Pending</span></td>
+
+                <td>
+
+                    <button class="view-btn">View</button>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>L1002</td>
+
+                <td>Rahul Sharma</td>
+
+                <td>₹300000</td>
+
+                <td>720</td>
+
+                <td><span class="approved">Approved</span></td>
+
+                <td>
+
+                    <button class="view-btn">View</button>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>L1003</td>
+
+                <td>Priya Patel</td>
+
+                <td>₹900000</td>
+
+                <td>650</td>
+
+                <td><span class="rejected">Rejected</span></td>
+
+                <td>
+
+                    <button class="view-btn">View</button>
+
+                </td>
+
+            </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
