@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bank Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+        <h2>🏦 Smart Bank</h2>
+    </div>
+
+    <!-- Generated dynamically -->
+    <ul id="menu"></ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<div class="search">
+
+<input type="text" id="searchBox" placeholder="Search...">
+
+</div>
+
+<div class="profile">
+
+<i class="fa-solid fa-bell"></i>
+
+<img src="images/user.png" alt="User">
+
+<span id="welcomeUser"></span>
+
+</div>
+
+</header>
+
+<!-- Dashboard Cards -->
+<section class="cards" id="cards">
+
+</section>
+
+<!-- Charts -->
+<section class="charts">
+
+<div class="chart">
+
+<h3 id="chart1Title"></h3>
+
+<canvas id="loanChart"></canvas>
+
+</div>
+
+<div class="chart">
+
+<h3 id="chart2Title"></h3>
+
+<canvas id="applicationChart"></canvas>
+
+</div>
+
+</section>
+
+<!-- Dynamic Table -->
+<section class="table-section">
+
+<h2 id="tableTitle"></h2>
+
+<table>
+
+<thead id="tableHead">
+
+</thead>
+
+<tbody id="tableBody">
+
+</tbody>
+
+</table>
+
+</section>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>

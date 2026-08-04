@@ -78,19 +78,20 @@ document.getElementById("loginForm")
     // TEMP LOGIN
     // Replace with Java Servlet
     // ==========================
-
+  
     if(currentRole === "customer"){
 
         if(email === "customer@gmail.com" && password === "1234"){
 
-            alert("Customer Login Successful");
+       alert("Customer Login Successful");
 
-            localStorage.setItem("role","customer");
-            localStorage.setItem("user",email);
+        localStorage.setItem("role","customer");
+        localStorage.setItem("name","Kiran Hirade");
+        localStorage.setItem("email",email);
 
-            window.location.href="dashboard.html";
+        window.location.href="../dashboardpage/dashboard.html";
 
-        }
+}
         else{
 
             alert("Invalid Customer Credentials");
@@ -103,14 +104,15 @@ document.getElementById("loginForm")
 
         if(email === "employee@gmail.com" && password === "admin123"){
 
-            alert("Employee Login Successful");
+    alert("Employee Login Successful");
 
-            localStorage.setItem("role","employee");
-            localStorage.setItem("user",email);
+    localStorage.setItem("role","employee");
+    localStorage.setItem("name","Loan Officer");
+    localStorage.setItem("email",email);
 
-            window.location.href="dashboard.html";
+    window.location.href="../dashboardpage/dashboard.html";
 
-        }
+}
         else{
 
             alert("Invalid Employee Credentials");
@@ -136,14 +138,15 @@ function validateEmail(email){
 // -------------------------------
 // Auto Login
 // -------------------------------
-
 window.onload = function(){
 
-    let role = localStorage.getItem("role");
+    const role = localStorage.getItem("role");
+    const name = localStorage.getItem("name");
 
     if(role){
 
-        console.log("Last Login :",role);
+        console.log("Role :", role);
+        console.log("User :", name);
 
     }
 
