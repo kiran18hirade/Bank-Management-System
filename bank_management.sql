@@ -1,8 +1,7 @@
--- =========================================================
+
 -- BANK MANAGEMENT SYSTEM
 -- MySQL Only DBMS Project
 -- Complete Single-Flow Script
--- =========================================================
 
 -- 1) Create database
 CREATE DATABASE IF NOT EXISTS bank_management_system;
